@@ -47,21 +47,23 @@ h6 {
 @media only screen and (max-width: 1000px) {
   .App {
     min-height: auto;
-    margin: 6vh auto;
+    margin: 50px auto;
     width: 90vw;
   }
 
   .logoContainer {
-    position: absolute;
+    position: static;
     width: 0;
-    height: 10vh;
+    height: 0;
     text-align: center;
     top: 0;
-    left: 90vw;
+    right: 0;
     .logo {
+      position: absolute;
       width: 40px;
       height: 40px;
-      top: 1vh;
+      top: 5px;
+      right: 3vw;
     }
   }
 
@@ -96,8 +98,18 @@ h6 {
     height: auto !important;
   }
 
+  .threeDays {
+    .title {
+      margin: 0 0 1vh 0;
+    }
+  }
+
   .placeVisit {
     flex-direction: column;
+
+    .title {
+      margin: 0 0 1vh 0;
+    }
 
     .reviews {
       width: 100%;

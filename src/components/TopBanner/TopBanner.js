@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './TopBanner.scss';
-import { getCityCurrentWeather } from '../../fetchAPI/fetchOpenWeather';
+import { getCityCurrentWeather } from '../../assets/fetchAPI/fetchOpenWeather';
 import { getWeatherIcon } from '../../assets/weatherIcons';
 
 function TopBanner() {

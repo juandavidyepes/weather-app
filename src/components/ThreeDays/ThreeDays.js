@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ThreeDays.scss';
 import DailyWeather from './DailyWeather/DailyWeather';
-import { getThreeDaysForecast } from '../../fetchAPI/fetchOpenWeather';
+import { getThreeDaysForecast } from '../../assets/fetchAPI/fetchOpenWeather';
 
 function ThreeDays() {
   // Fetch 3 days forecast of Bogota

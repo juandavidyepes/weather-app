@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NewCity from './NewCity/NewCity';
 import City from './City/City';
-import { getCityCurrentWeather } from '../../fetchAPI/fetchOpenWeather';
+import { getCityCurrentWeather } from '../../assets/fetchAPI/fetchOpenWeather';
 
 import './Cities.scss';
 

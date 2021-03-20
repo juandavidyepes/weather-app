@@ -1,6 +1,6 @@
 # GradiWeather
 
-GradiWeather is a web app developed with React for getting real time weather information using OpenWeather API. Temperature is shown in Celsius and wind speed in km/h.  
+GradiWeather is a web app developed with React for getting real time weather information using OpenWeather API.  
 
 URL: https://gradi-weather.netlify.app/
 
@@ -16,7 +16,7 @@ URL: https://gradi-weather.netlify.app/
 ![Screenshot](Screenshot.png)
 
 
-You can find the following components in the web app:
+You can find the following components in the web app, temperature is shown in Celsius and wind speed in km/h. :
 
 ### Main City
 

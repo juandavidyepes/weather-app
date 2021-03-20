@@ -1,10 +1,10 @@
-# GradWeather
+# GradiWeather
 
 GradiWeather is a web app for getting real time weather information using OpenWeather API. Temperature is shown in Celsius and wind speed in km/h.
 
 ## Components
 
-![Screenshot](https://github.com/juandavidyepes/weather-app/blob/master/Screenshot 2021-03-20 164528.png)
+![Screenshot](Screenshot.png)
 
 
 You can find the following components in the web app:

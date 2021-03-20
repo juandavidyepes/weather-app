@@ -7,7 +7,7 @@ GradiWeather is a web app for getting real time weather information using OpenWe
 -[Components](#components)  
 -[API](#api)  
 -[Responsive](#responsive)  
--[Future implementations](#futureimplementations)  
+-[Future implementations](#future implementations)  
 
 ## Components
 

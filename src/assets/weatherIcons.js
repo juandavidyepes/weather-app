@@ -1,3 +1,5 @@
+//Object with icon class according to type of weather
+
 const types = {
   Thunderstorm: 'fas fa-bolt',
   Drizzle: 'fas fa-cloud-rain',
@@ -6,6 +8,8 @@ const types = {
   Clear: 'fas fa-sun',
   Clouds: 'fas fa-cloud',
 };
+
+//Assign class string according to the input weather
 
 export const getWeatherIcon = (main) => {
   let iconClass = '';

@@ -4,21 +4,26 @@ import { getCityCurrentWeather } from '../../fetchAPI/fetchOpenWeather';
 import { getWeatherIcon } from '../../assets/weatherIcons';
 
 function TopBanner() {
+  // Fetch current weather data usign city's latitude and longitud
+
   useEffect(() => {
-    getCityCurrentWeather(4.6097, -74.0817)
-      .then((res) => updateTemp(res))
-      .catch((err) => console.log(err));
+    const fetchData = async () => {
+      let res = await getCityCurrentWeather(4.6097, -74.0817);
+      updateTemp(res);
+    };
+    fetchData();
   }, []);
+
+  //Set dinamic elements of the component
 
   const [degrees, setCelsius] = useState('0');
   const [condition, setCondition] = useState('Clear');
   const [weatherIcon, setWeatherIcon] = useState('fas fa-cloud-sun');
 
   const updateTemp = (res) => {
-    setCelsius(res.main.temp);
+    setCelsius(res.main.temp.toFixed());
     setCondition(res.weather[0].main);
     setWeatherIcon(getWeatherIcon(res.weather[0].main));
-    console.log(weatherIcon);
   };
 
   return (

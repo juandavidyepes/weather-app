@@ -56,22 +56,8 @@ h6 {
     top: 1vh;
   }
 
-  .threeDays,
-  .placeVisit,
-  .cities {
-    margin: 20px 5% 20px;
-    width: 100% !important;
-    height: auto !important;
-  }
-  .placeVisit {
-    flex-direction: column;
-
-    .reviews {
-      width: 100%;
-    }
-  }
   .topBanner {
-    margin: 30px auto 30px;
+    margin: 12.6px auto 20px;
     min-height: 313px;
 
     .title {
@@ -90,6 +76,22 @@ h6 {
     .degrees {
       width: max-content;
       margin: -100px 0 0 -3.8%;
+    }
+  }
+
+  .threeDays,
+  .placeVisit,
+  .cities {
+    margin: 0 5% 20px;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .placeVisit {
+    flex-direction: column;
+
+    .reviews {
+      width: 100%;
     }
   }
 }

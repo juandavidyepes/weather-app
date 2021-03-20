@@ -2,13 +2,13 @@ import React, { useState, useEffect } from 'react';
 import './Card.scss';
 
 function Card(props) {
+  // Collect props and assign to dynamic component
   const { id, size, image, place, city } = props;
-
   const [isLast, setIsLast] = useState(false);
 
   useEffect(() => {
     if (id === 2) {
-      setIsLast(true);
+      setIsLast(true); //Add button to last card
     }
   }, []);
 

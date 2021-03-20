@@ -1,5 +1,7 @@
 @import '../../App.scss';
 
+$darkPurple: #353688;
+
 .topBanner {
   background: {
     color: gray;
@@ -31,27 +33,26 @@
   }
 
   .degrees {
-    width: max-content;
+    width: fit-content;
     margin: -147px 0 0 -3.8%;
   }
 
   .degreesNumber,
   .degreesIcon {
-    background-color: $purple;
     margin: -27px 0 0 0;
     width: 80px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-right-radius: 25px;
+    border-top-right-radius: 27px;
     border-bottom-right-radius: 27px;
     box-shadow: 20px 40px 50px 0px rgba(0, 0, 0, 0.27);
+    position: relative;
   }
 
   .degreesIcon {
-    position: relative;
-    background-color: #353688;
+    background-color: $darkPurple;
     display: flex;
     flex-direction: column;
     border-bottom-left-radius: 15px;
@@ -71,6 +72,7 @@
   }
 
   .degreesNumber {
+    background-color: $purple;
     margin: -35px 0 0 0;
     padding-top: 25px;
 
@@ -88,5 +90,27 @@
       color: white;
       font-family: $fontFamilyNumbers;
     }
+  }
+
+  .degreesIcon:before,
+  .degreesNumber:after {
+    content: '';
+    position: absolute;
+    left: 0.25em;
+    width: 1em;
+    height: 30px;
+    margin-left: -4px;
+  }
+
+  .degreesIcon:before {
+    top: -30px;
+    border-bottom-left-radius: 1em;
+    box-shadow: 0 20px 0 0 $darkPurple; /* This is where the magic happens! */
+  }
+
+  .degreesNumber:after {
+    bottom: -30px;
+    border-top-left-radius: 1em;
+    box-shadow: 0 -20px 0 0 $purple; /* This is where the magic happens! */
   }
 }

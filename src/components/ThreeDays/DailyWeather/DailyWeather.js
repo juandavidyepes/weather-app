@@ -3,8 +3,8 @@ import './DailyWeather.scss';
 import { getWeatherIcon } from '../../../assets/weatherIcons';
 
 function DailyWeather(props) {
+  // Collect props and assign to dynamic component
   const { day, type, maxTemp, minTemp } = props;
-
   const [weatherIcon, setWeatherIcon] = useState('fas fa-cloud-sun');
   // eslint-disable-next-line no-unused-vars
   const [dayText, setDayText] = useState(day);
@@ -13,7 +13,7 @@ function DailyWeather(props) {
   useEffect(() => {
     const { id } = props;
     if (id === 0) {
-      setTempClass('temp first');
+      setTempClass('temp first'); //Changes color of first DailyWeather component
     }
     setWeatherIcon(getWeatherIcon(type));
   }, [props]);

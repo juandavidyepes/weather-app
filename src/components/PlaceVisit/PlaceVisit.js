@@ -3,6 +3,8 @@ import './PlaceVisit.scss';
 import Card from './Card/Card';
 
 function PlaceVisit() {
+  //Array for Card's props
+
   let cards = [
     {
       id: 0,
@@ -58,7 +60,7 @@ function PlaceVisit() {
       </section>
       <div className='secondaryCards'>
         {cards.map((element) => {
-          return <Card {...element} />;
+          return <Card key={element.id} {...element} />;
         })}
       </div>
     </div>

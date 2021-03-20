@@ -1,15 +1,51 @@
 # GradiWeather
 
-GradiWeather is a web app developed with React for getting real time weather information using OpenWeather API.  
+GradiWeather is a web app developed with **_React_** for getting real time weather information using OpenWeather API.  
 
 URL: https://gradi-weather.netlify.app/
 
 ##### Table of Contents
 
--[Components](#components)  
+-[Development](#development)  
 -[API](#api)  
+-[Components](#components)  
 -[Responsive](#responsive)  
 -[Future implementations](#future-implementations)  
+
+## Development
+
+This project was developed using React due to it's ease for using dynamic components. The components structure goes as follow:
+
+* App
+  * TopBanner
+  * ThreeDays
+    * DailyWeather    
+  * PlaceVisit
+    * Card
+  * Cities
+    *  NewCity
+    *  City  
+
+This components can be found in the **components** folder. Additionally there is an **assets** folder where you will find the script for fetching the data from the API and a script that provides the icon class according to the type of weather
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## API
+
+All the information that is displayed in the app is being fetched in real time from the following endpoint in the OpenWeather API.
+
+### Current Weather Data
+
+This endpoint gives you access to the current weather information from a city of choice. From the data provided, the app uses the name of the city, country, current temperature, weather condition, humidity, wind speed and wind direction. 
+
+### One Call API
+
+With this endpoint, you can get information of the current weather and historical data aswell. This uses this data to provide the daily forecast of the next three following days.
 
 ## Components
 
@@ -33,18 +69,6 @@ Consist of information about places you might like to visit, it's photo and name
 ### City cards
 
 Here you can display information about the current weather in any city. The elements are city, country, temperature, weather condition, humidity, wind speed and wind direction.
-
-## API
-
-All the information that is displayed in the app is being fetched in real time from the following endpoint in the OpenWeather API.
-
-### Current Weather Data
-
-This endpoint gives you access to the current weather information from a city of choice. From the data provided, the app uses the name of the city, country, current temperature, weather condition, humidity, wind speed and wind direction. 
-
-### One Call API
-
-With this endpoint, you can get information of the current weather and historical data aswell. This uses this data to provide the daily forecast of the next three following days.
 
 ## Responsive
 

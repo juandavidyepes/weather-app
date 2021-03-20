@@ -34,7 +34,7 @@ Consist of information about places you might like to visit, it's photo and name
 
 Here you can display information of the current weather in any city. The elements are city, country, temperature, weather condition, humidity, wind speed and wind direction.
 
-## APi
+## API
 
 All the information that is display in the app is being fetch in real time from the following endpoint in the OpenWeather API.
 

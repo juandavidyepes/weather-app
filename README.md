@@ -6,6 +6,7 @@ GradiWeather is a web app for getting real time weather information using OpenWe
 
 -[Components](#components)  
 -[API](#api)
+-[Responsive](#responsive)
 
 ## Components
 
@@ -47,3 +48,10 @@ With this endpoint you can get information of the current weather and historical
 This web app it's also devolped to work in mobile devices  
 
 ![Screenshot](ScreenshotMobile.png)
+
+## Future implementations
+
+- Ability to change the cards of city displayed.  
+- Change the main city.  
+- Dinamic cards at Place to Visit.  
+- Show more info when selecting a card.

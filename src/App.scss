@@ -1,0 +1,33 @@
+$purple: #7768e5;
+$fontFamilyPlace: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fontFamily: 'Poppins', sans-serif;
+$fontFamilyNumbers: 'Teko', sans-serif;
+$borderRadius: 30px;
+
+body {
+  background-color: #e3e8ed;
+  font-family: $fontFamily;
+  margin: 0;
+}
+
+.App {
+  width: 85vw;
+  max-width: 1040px;
+  min-height: 80vh;
+  background-color: white;
+  margin: 10vh auto;
+  border-radius: $borderRadius;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

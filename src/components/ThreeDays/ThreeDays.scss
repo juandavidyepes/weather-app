@@ -1,0 +1,19 @@
+@import '../../App.scss';
+
+.threeDays {
+  margin: 0 2.5% 0 5%;
+  width: 20%;
+
+  .title {
+    font: {
+      family: $fontFamily;
+      size: 1.3rem;
+      weight: 900;
+    }
+    margin: 0 0 3vh 0;
+
+    span {
+      font-weight: 100;
+    }
+  }
+}

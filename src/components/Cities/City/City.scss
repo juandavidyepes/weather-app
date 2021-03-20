@@ -1,0 +1,87 @@
+@import '../../../App.scss';
+
+.city {
+  height: 110px;
+  width: 100%;
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  margin: 10px 0;
+  position: relative;
+  background-color: white;
+  z-index: +2;
+
+  .info,
+  .details {
+    text-align: center;
+    width: 100%;
+    display: flex;
+  }
+
+  .info {
+    height: 70%;
+    display: flex;
+    align-items: center;
+
+    .iconContainer {
+      height: 100%;
+      width: 77px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #dfe7f4;
+      border-radius: 15px;
+    }
+
+    .degrees {
+      width: 70px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: {
+        size: 2.2rem;
+        weight: 500;
+        family: $fontFamilyNumbers;
+      }
+
+      span {
+        margin: -17px 0 0;
+        font-size: 15px;
+        color: $purple;
+        font-weight: lighter;
+      }
+    }
+
+    .place {
+      padding-left: 10px;
+      border-left: solid 1px #dfe7f4;
+
+      .cityTitle,
+      .countryTitle {
+        text-align: left;
+        font-family: $fontFamily;
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    height: 30%;
+    align-items: center;
+    justify-content: space-around;
+
+    h5 {
+      width: 30%;
+      color: #cfcfcf;
+      font-weight: lighter;
+      font-size: 10px;
+    }
+
+    .det2 {
+      border: {
+        left: 1px solid #eeedfc;
+        right: 1px solid #eeedfc;
+      }
+    }
+  }
+}

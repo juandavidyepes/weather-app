@@ -1,0 +1,92 @@
+@import '../../App.scss';
+
+.topBanner {
+  background: {
+    color: gray;
+    image: url('https://images.unsplash.com/photo-1615406020658-6c4b805f1f30?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+  }
+  width: 93%;
+  min-height: 35vh;
+  margin: 3vh auto;
+  border-radius: $borderRadius;
+
+  .title {
+    margin: 8vh 0 0 8%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $purple;
+    font-family: $fontFamilyPlace;
+  }
+
+  .title i {
+    margin: 0 0.2vw 0 0;
+  }
+
+  .map {
+    width: 70px;
+    margin: 2vh 0 0 10%;
+  }
+
+  .degrees {
+    width: max-content;
+    margin: -147px 0 0 -3.7%;
+  }
+
+  .degreesNumber,
+  .degreesIcon {
+    background-color: $purple;
+    margin: -27px 0 0 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 27px;
+    box-shadow: 20px 40px 50px 0px rgba(0, 0, 0, 0.27);
+  }
+
+  .degreesIcon {
+    position: relative;
+    background-color: #353688;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 15px;
+    z-index: +1;
+
+    .fas {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: white;
+      font-size: 8px;
+      font-weight: lighter;
+      margin: 0;
+    }
+  }
+
+  .degreesNumber {
+    margin: -35px 0 0 0;
+    padding-top: 25px;
+
+    h2 {
+      margin: 0;
+      color: white;
+      font-family: $fontFamilyNumbers;
+      font-weight: 300;
+      font-size: 45px;
+    }
+
+    span {
+      margin-top: -20px;
+      font-size: 15px;
+      color: white;
+      font-family: $fontFamilyNumbers;
+    }
+  }
+}

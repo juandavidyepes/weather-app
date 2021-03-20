@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './City.scss';
+import { getWeatherIcon } from '../../../assets/weatherIcons';
 
 function City(props) {
-  const { city, country, degrees, humidity, windDir, windvel } = props;
+  const { city, country, degrees, humidity, windDir, windvel, type } = props;
   const [weatherIcon, setWeatherIcon] = useState('fas fa-cloud-sun fa-2x');
   const [dir, setDir] = useState('NA');
 
@@ -27,13 +28,14 @@ function City(props) {
     } else {
       setDir('North');
     }
+    setWeatherIcon(getWeatherIcon(type));
   });
 
   return (
     <div className='city'>
       <section className='info'>
         <div className='iconContainer'>
-          <i className={weatherIcon}></i>
+          <i className={weatherIcon + ' fa-2x'}></i>
         </div>
 
         <h2 className='degrees'>

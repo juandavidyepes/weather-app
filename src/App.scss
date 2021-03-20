@@ -13,13 +13,13 @@ body {
 .App {
   width: 85vw;
   max-width: 1040px;
-  min-height: 80vh;
+  min-height: 734.24px;
   background-color: white;
   margin: 10vh auto;
   border-radius: $borderRadius;
   display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
 }
 
@@ -30,4 +30,66 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+.fa-bolt,
+.fa-cloud-rain,
+.fa-cloud-showers-heavy,
+.fa-snowflake,
+.fa-cloud {
+  color: $purple;
+}
+
+.fa-sun {
+  color: #f8ca4d;
+}
+
+@media only screen and (max-width: 1000px) {
+  .App {
+    min-height: auto;
+    margin: 8vh auto;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+    top: 1vh;
+  }
+
+  .threeDays,
+  .placeVisit,
+  .cities {
+    margin: 20px 5% 20px;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .placeVisit {
+    flex-direction: column;
+
+    .reviews {
+      width: 100%;
+    }
+  }
+  .topBanner {
+    margin: 30px auto 30px;
+    min-height: 313px;
+
+    .title {
+      margin: 2vh 0 0 15%;
+    }
+
+    .title i {
+      margin: 0 0.2vw 0 0;
+    }
+
+    .map {
+      width: 70px;
+      margin: 2vh 0 0 25%;
+    }
+
+    .degrees {
+      width: max-content;
+      margin: -100px 0 0 -3.8%;
+    }
+  }
 }

@@ -29,6 +29,7 @@ function Cities() {
       humidity: res.main.humidity,
       windDir: res.wind.deg,
       windvel: res.wind.speed,
+      type: res.weather[0].main,
     };
     return element;
   };

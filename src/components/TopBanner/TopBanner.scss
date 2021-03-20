@@ -4,13 +4,13 @@
   background: {
     color: gray;
     image: url('https://images.unsplash.com/photo-1615406020658-6c4b805f1f30?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-    position: center;
+    position: left center;
     repeat: no-repeat;
     size: cover;
   }
   width: 93%;
-  min-height: 35vh;
-  margin: 3vh auto;
+  min-height: 313px;
+  margin: 0 auto 30px;
   border-radius: $borderRadius;
 
   .title {
@@ -32,7 +32,7 @@
 
   .degrees {
     width: max-content;
-    margin: -147px 0 0 -3.7%;
+    margin: -147px 0 0 -3.8%;
   }
 
   .degreesNumber,

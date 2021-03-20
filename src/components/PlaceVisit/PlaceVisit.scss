@@ -1,12 +1,12 @@
 @import '../../App.scss';
 
 .placeVisit {
-  margin: 0 2.5% 0 2.5%;
-  width: 37.5%;
-  max-height: 300px;
+  margin: 0 5% 0;
+  width: 35%;
+  height: 300px;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   .title {
     font: {
@@ -23,6 +23,46 @@
 
   .reviews {
     height: 31px;
+    width: 45%;
     margin: 0 0 3vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h6 {
+      color: #cfcfcf;
+      font-size: 9px;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+
+      .miniIcon {
+        width: 23px;
+        height: 23px;
+        border-radius: 8px;
+        border: 2px solid white;
+        margin: 0 0 0 -4px;
+      }
+
+      .btn {
+        background-color: #ada5f0;
+        color: white;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+      }
+    }
+  }
+  .secondaryCards {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-between;
+    justify-content: space-between;
   }
 }

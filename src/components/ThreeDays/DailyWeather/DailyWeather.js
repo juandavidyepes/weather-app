@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './DailyWeather.scss';
+import { getWeatherIcon } from '../../../assets/weatherIcons';
 
 function DailyWeather(props) {
   const { day, type, maxTemp, minTemp } = props;
 
   const [weatherIcon, setWeatherIcon] = useState('fas fa-cloud-sun');
+  // eslint-disable-next-line no-unused-vars
   const [dayText, setDayText] = useState(day);
   const [tempClass, setTempClass] = useState('temp');
 
@@ -13,11 +15,12 @@ function DailyWeather(props) {
     if (id === 0) {
       setTempClass('temp first');
     }
+    setWeatherIcon(getWeatherIcon(type));
   }, [props]);
 
   return (
     <div className='dailyWeather'>
-      <i className={weatherIcon}></i>
+      <i className={weatherIcon + ' fa-lg'}></i>
       <div>
         <h1>{dayText}</h1>
         <h6>{type}</h6>

@@ -8,7 +8,7 @@ export const getCityCurrentWeather = async (lat, lon) => {
     }
   );
   const data = await resp.json();
-  // console.log(data);
+  console.log(data);
   return data;
 };
 

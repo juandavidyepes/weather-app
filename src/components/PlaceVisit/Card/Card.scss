@@ -1,31 +1,71 @@
 @import '../../../App.scss';
 
+$small: 80px;
+$medium: 130px;
+$large: 230px;
+$borderRadiusCards: 25px;
+
 .card {
-  width: 45%;
+  width: 47%;
   height: 230px;
-  border-radius: $borderRadius;
+  border-radius: $borderRadiusCards;
   color: white;
   background: {
     color: gray;
-    image: url('https://images.unsplash.com/photo-1582483755595-8bfccb0b4a37?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=603&q=80');
     position: center;
     repeat: no-repeat;
-    size: 100% auto;
+    size: cover;
   }
   display: flex;
+  justify-content: space-between;
   font-weight: 300;
   box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.3);
 
   .info {
+    display: flex;
+  }
+
+  .infoTitles {
     margin: 20px 0 0 8px;
   }
 
-  h6 {
+  .placeTitle,
+  .cityTitle {
     margin: 0;
     font-weight: 600;
+    width: 70%;
   }
 
   i {
     margin: 20px 0 0 15px;
+  }
+
+  .addBtn {
+    background-color: $purple;
+    font-family: 'Muli', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    border-radius: $borderRadiusCards;
+    width: 30%;
+    height: 100%;
+    border: 0;
+    outline: none;
+  }
+}
+
+.small {
+  height: $small;
+}
+
+.medium {
+  height: $medium;
+}
+
+.large {
+  height: $large;
+  .placeTitle,
+  .cityTitle {
+    width: 100%;
   }
 }
